@@ -40,7 +40,8 @@ class AdditionalInfo extends StatelessWidget {
                   const String _lng = '-64.2978077';
 
                   // Parseo la URL
-                  const String _apiKey = '404bcfdfe7eb552ef1d75d4a32aeab60';
+                  // https://home.openweathermap.org/users/sign_in
+                  const String _apiKey = 'HERE_YOU_API_KEY';
                   const String _url =
                       'https://api.openweathermap.org/datadel/2.5/weather?lat=$_lat&lon=$_lng&appid=$_apiKey';
                   final _response = await Dio().get(_url);
