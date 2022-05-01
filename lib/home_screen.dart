@@ -33,20 +33,27 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: Column(
                   children: const <Widget>[
+                    // Titulo de la app
                     Text(
-                      'Weather by\nDe Wet Baumann',
+                      'Weather forecast',
                       style: TextStyle(fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
+
+                    // Icono, temperatura actual y ubicación
                     CurrentStatus(
-                      icon: 'electric-storm',
-                      temperature: '31,2',
-                      ubication: 'Argentina, Santiago del Estero',
+                      icon: 'sun',
+                      temperature: '31,9',
+                      ubication: 'Tbilisi, Georgia',
                     ),
+
+                    // Tarjetas de la temperatura
                     DayCards(),
                   ],
                 ),
               ),
+
+              // Informacion adicional
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15),
                 child: AdditionalInfo(
@@ -56,6 +63,8 @@ class HomeScreen extends StatelessWidget {
                   uv: '1',
                 ),
               ),
+
+              // Grafica de la temperatura
               const CustomGraphic(
                 firstSpot: 14,
                 secondSpot: 12,

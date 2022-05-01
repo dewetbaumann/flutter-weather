@@ -29,7 +29,11 @@ class DataRepresentation extends StatelessWidget {
           ),
           Text(
             data,
-            style: const TextStyle(color: greyColorDark),
+            style: const TextStyle(
+              fontSize: 13,
+              color: Color.fromARGB(255, 160, 163, 167),
+              fontWeight: FontWeight.bold,
+            ),
           ),
           Text(
             unity,

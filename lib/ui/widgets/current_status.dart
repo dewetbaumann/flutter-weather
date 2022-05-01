@@ -23,7 +23,7 @@ class CurrentStatus extends StatelessWidget {
     return Column(
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.only(top: 15, bottom: 15),
+          padding: const EdgeInsets.only(top: 25, bottom: 15),
           child: Image.asset(
             'assets/images/$icon.png',
             color: color,
@@ -34,12 +34,19 @@ class CurrentStatus extends StatelessWidget {
           '$temperature°',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 24,
+            fontSize: 42,
           ),
         ),
-        Text(
-          ubication,
-          style: const TextStyle(fontSize: 12),
+        Padding(
+          padding: const EdgeInsets.only(top: 10),
+          child: Text(
+            ubication,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Color.fromARGB(255, 120, 122, 125),
+            ),
+          ),
         ),
       ],
     );

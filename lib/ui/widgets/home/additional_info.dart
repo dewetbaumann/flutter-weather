@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:weather/ui/utils/colors_palette.dart';
 import 'package:weather/ui/widgets/home/data_representation.dart';
 
 class AdditionalInfo extends StatelessWidget {
@@ -53,14 +54,14 @@ class AdditionalInfo extends StatelessWidget {
                       double.parse(_response.data['wind']['speed'].toString());
                   final double _visibility = double.parse(_response.data['visibility'].toString());
 
-                  print('Temperature: $_currentTempInCelcius');
-                  print('Wind speed: $_windSpeed');
-                  print('Visibility: $_visibility');
-                  print('Humidity: $_humidity');
+                  // print('Temperature: $_currentTempInCelcius');
+                  // print('Wind speed: $_windSpeed');
+                  // print('Visibility: $_visibility');
+                  // print('Humidity: $_humidity');
                 },
                 child: const Icon(
                   Icons.update,
-                  color: Color(0xFFC3C3C3),
+                  color: greyColorLight,
                 ),
               ),
             ],
